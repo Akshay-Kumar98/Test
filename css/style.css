@@ -6595,6 +6595,15 @@ ul.sub-menu li a:hover {
         height: 300px;
     }
 
+      .about-choose-row {
+        justify-content: space-between;
+        column-gap: 0;
+    }
+
+    .about-choose-card {
+        width: 100%;
+    }
+
     .service-image {
         height: 300px;
     }

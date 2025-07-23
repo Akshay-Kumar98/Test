@@ -1,0 +1,1344 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test</title>
+    <link rel="icon" href="images/favicon.png" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.1.0-beta.1/css/select2.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="top-bar">
+            <div class="container">
+                <div class="top-head-box d-flex justify-content-between flex-wrap">
+
+                    <div class="top-left">
+                        <ul class="d-flex">
+                            <li><a href="mailto:example@gmail.com"><i class="fa-solid fa-envelope"></i>
+                                    <span>example@gmail.com</span></a></li>
+                            <li><i class="fa-solid fa-location-dot"></i> <span>Lorem ipsum dolor sit amet</span></li>
+                            <li><i class="fa-solid fa-clock"></i> <span>Sunday-Friday : 9 am - 8 pm</span></li>
+                        </ul>
+                    </div>
+
+                    <div class="top-right d-flex">
+                        <ul class="d-flex social-icon">
+                            <li><a href="https://www.facebook.com" target="_blank" data-bs-toggle="tooltip"
+                                    data-bs-placement="bottom" data-bs-custom-class="custom-tooltip"
+                                    data-bs-title="Facebook"> <i class="fa-brands fa-facebook-f" aria-hidden="true"></i>
+                                </a></li>
+                            <li><a href="https://www.instagram.com" target="_blank" data-bs-toggle="tooltip"
+                                    data-bs-placement="bottom" data-bs-custom-class="custom-tooltip"
+                                    data-bs-title="Instagram"> <i class="fa-brands fa-instagram" aria-hidden="true"></i>
+                                </a></li>
+                            <li><a href="https://www.youtube.com" target="_blank" data-bs-toggle="tooltip"
+                                    data-bs-placement="bottom" data-bs-custom-class="custom-tooltip"
+                                    data-bs-title="Youtube"> <i class="fa-brands fa-youtube"></i> </a></li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <!-- top bar ends -->
+
+        <div class="nav-box">
+            <div class="container">
+                <div class="nav-bar d-flex align-items-center justify-content-between">
+
+                    <div class="logo">
+                        <a href="index.html"><img src="images/logo.png" alt="header-logo" class="img-fluid"
+                                loading="lazy"></a>
+                    </div>
+
+                    <div class="menu">
+                        <ul>
+                            <li class="active"><a href="index.html">Home</a></li>
+                            <li><a href="#product-section">Products</a>
+                                <ul class="sub-menu">
+                                    <li><a href="#product-section">Hair care</a></li>
+                                    <li><a href="#product-section">Stress care</a></li>
+                                    <li><a href="#product-section">Health care</a></li>
+                                    <li><a href="#product-section">Beard care</a></li>
+                                    <li><a href="#product-section">Beauty care</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#testimonial-section">Reviews</a></li>
+                            <li><a href="#blog-section">Blogs</a></li>
+                            <li><a href="#contact-section">Contact Us</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="menu-btn-box">
+                        <div class="menu-icon-box">
+                            <div class="search-bar">
+                                <form>
+                                    <div class="search-form">
+                                        <div class="search-input">
+                                            <input type="text" name="search" placeholder="Search...">
+                                        </div>
+                                        <div class="search-btn">
+                                            <button type="submit"><i class="fas fa-search"></i></button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+
+                            <div class="search-icon">
+                                <a href="#" data-bs-toggle="modal"
+                                data-bs-target="#search-popup"><i class="fas fa-search"></i></a>
+                            </div>
+
+                            <div class="cart-icon">
+                                <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                            </div>
+
+                        </div>
+                        <div class="menu-btn">
+                            <a href="#" class="button-style1" data-bs-toggle="modal"
+                                data-bs-target="#home-popup">Appointment <i class="fa-solid fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="mobile-menu bars" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button">
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                    </div>
+
+                    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample"
+                        aria-labelledby="offcanvasExampleLabel">
+                        <div class="offcanvas-header">
+                            <div class="logo">
+                                <a href="index.html"><img src="images/logo.png" alt="header-logo" class="img-fluid"
+                                        loading="lazy"></a>
+                            </div>
+                            <button type="button" class="close-sidebar" data-bs-dismiss="offcanvas"
+                                aria-label="Close"><i class="fa-solid fa-xmark"></i></button>
+                        </div>
+                        <div class="offcanvas-body">
+                            <div class="menu">
+                                <ul>
+                                    <li class="active"><a href="index.html">Home</a></li>
+                                    <li><a href="#product-section">Products</a>
+                                        <ul class="sub-menu">
+                                            <li><a href="#product-section">Hair care</a></li>
+                                            <li><a href="#product-section">Stress care</a></li>
+                                            <li><a href="#product-section">Health care</a></li>
+                                            <li><a href="#product-section">Beard care</a></li>
+                                            <li><a href="#product-section">Beauty care</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#testimonial-section">Reviews</a></li>
+                                    <li><a href="#blog-section">Blogs</a></li>
+                                    <li><a href="#contact-section">Contact Us</a></li>
+                                </ul>
+                            </div>
+
+                            <div class="menu-btn-box">
+                                <div class="menu-btn">
+                                    <a href="#" class="button-style1" data-bs-toggle="modal"
+                                        data-bs-target="#home-popup">Appointment <i
+                                            class="fa-solid fa-arrow-right"></i></a>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- header ends -->
+
+    <div class="modal fade home-popup" id="home-popup" tabindex="-1" aria-labelledby="homepopupLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3>Enquire Now</h3>
+                    <button type="button" class="popup-close" data-bs-dismiss="modal" aria-label="Close">
+                        <i class="fa-solid fa-xmark"></i>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="popup-form">
+                        <input type="text" name="popup-text" id="popup-text" placeholder="Enter Name"
+                            class="popup-input">
+                        <input type="email" name="popup-mail" id="popup-mail" placeholder="E-mail Address"
+                            class="popup-input">
+                        <input type="tel" name="popup-phone" id="popup-phone" placeholder="Phone Number"
+                            class="popup-input">
+                        <select class="js-example-basic-single popup-select-box">
+                            <option value="">--Select Product--</option>
+                            <option value="haircare">Hair care</option>
+                            <option value="stresscare">Stress care</option>
+                            <option value="heathcare">Health care</option>
+                            <option value="beardcare">Beard care</option>
+                            <option value="beautycare">Beauty care</option>
+                        </select>
+                        <textarea name="popup-message" id="popup-message" placeholder="Your Message..."
+                            class="popup-area"></textarea>
+                        <input type="submit" value="Send Message" class="popup-submit">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- modal ends -->
+
+        <div class="modal fade search-popup home-popup" id="search-popup" tabindex="-1" aria-labelledby="searchpopupLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3>Search</h3>
+                    <button type="button" class="popup-close" data-bs-dismiss="modal" aria-label="Close">
+                        <i class="fa-solid fa-xmark"></i>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="popup-form">
+                        <label for="search-text"><i class="fa fa-search" aria-hidden="true"></i> Search</label>
+                        <input type="text" name="search-text" id="search-text" placeholder="What you are looking for ?"
+                            class="popup-input">
+                        <input type="submit" value="Search" class="popup-submit">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- modal ends -->
+
+    <main class="main-content" id="mainContent">
+        <section class="slider">
+
+            <div class="banner">
+                <img src="images/banner1.jpg" alt="banner-image" class="img-fluid" loading="lazy">
+                <div class="banner-cont">
+                    <div class="container">
+                        <div class="banner-text">
+                            <h5 class="banner-sub-head slick-animate" data-animation="fadeInUp" data-delay="0.2s">Lorem
+                                Ipsum
+                            </h5>
+                            <h2 class="banner-heading slick-animate" data-animation="fadeInUp" data-delay="0.4s">Lorem
+                                ipsum
+                                dolor sit amet consectetur adipisicing elit</h2>
+                            <p class="banner-info slick-animate" data-animation="fadeInUp" data-delay="0.6s">Lorem ipsum
+                                dolor sit amet consectetur, adipisicing elit. Doloremque, voluptatibus et temporibus
+                                unde
+                                dolore veniam!</p>
+                            <div class="banner-btn slick-animate" data-animation="fadeInUp" data-delay="0.8s">
+                                <a href="#about-section" class="button-style2">Read More <i class="fa-solid fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="banner">
+                <img src="images/banner2.jpg" alt="banner-image" class="img-fluid" loading="lazy">
+                <div class="banner-cont">
+                    <div class="container">
+                        <div class="banner-text">
+                            <h5 class="banner-sub-head slick-animate" data-animation="fadeInUp" data-delay="0.2s">Lorem
+                                Ipsum
+                            </h5>
+                            <h2 class="banner-heading slick-animate" data-animation="fadeInUp" data-delay="0.4s">Lorem
+                                ipsum
+                                dolor sit amet consectetur adipisicing elit</h2>
+                            <p class="banner-info slick-animate" data-animation="fadeInUp" data-delay="0.6s">Lorem ipsum
+                                dolor sit amet consectetur, adipisicing elit. Doloremque, voluptatibus et temporibus
+                                unde
+                                dolore veniam!</p>
+                            <div class="banner-btn slick-animate" data-animation="fadeInUp" data-delay="0.8s">
+                                <a href="#about-section" class="button-style2">Read More <i class="fa-solid fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="banner">
+                <img src="images/banner3.jpg" alt="banner-image" class="img-fluid" loading="lazy">
+                <div class="banner-cont">
+                    <div class="container">
+                        <div class="banner-text">
+                            <h5 class="banner-sub-head slick-animate" data-animation="fadeInUp" data-delay="0.2s">Lorem
+                                Ipsum
+                            </h5>
+                            <h2 class="banner-heading slick-animate" data-animation="fadeInUp" data-delay="0.4s">Lorem
+                                ipsum
+                                dolor sit amet consectetur adipisicing elit</h2>
+                            <p class="banner-info slick-animate" data-animation="fadeInUp" data-delay="0.6s">Lorem ipsum
+                                dolor sit amet consectetur, adipisicing elit. Doloremque, voluptatibus et temporibus
+                                unde
+                                dolore veniam!</p>
+                            <div class="banner-btn slick-animate" data-animation="fadeInUp" data-delay="0.8s">
+                                <a href="#about-section" class="button-style2">Read More <i class="fa-solid fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </section>
+
+        <!-- banner section ends -->
+
+        <section class="about-box padd wow fadeInUp" id="about-section">
+            <div class="container">
+                <div class="row about-row">
+
+                    <div class="col-lg-6 col-md-12 col-sm-12">
+                        <div class="about-image desktop-image-box shine wow SlideInRight" data-wow-delay="0.3s">
+                            <div class="desktop-image">
+                                <img src="images/about.jpg" alt="about-item-image" class="img-fluid" loading="lazy">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6 col-md-12 col-sm-12">
+                        <div class="about-text wow fadeInUp" data-wow-delay="0.5s">
+                            <h5 class="sub-title">Lorem Ipsum</h5>
+                            <h1 class="title">Lorem ipsum dolor sit amet consectetur adipisicing</h1>
+                            <div class="mobile-image wow fadeInUp" data-wow-delay="0.3s">
+                                <div class="about-image">
+                                    <img src="images/about.jpg" alt="about-item-image" class="img-fluid" loading="lazy">
+                                </div>
+                            </div>
+                            <p class="about-info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente
+                                molestias cum at quisquam error reiciendis inventore doloremque eius voluptas saepe
+                                consequuntur culpa, fugit quam qui illo labore corporis illum vitae dolores. Laborum
+                                ipsum
+                                ipsam velit vitae voluptatum, natus ad. Possimus, beatae consectetur cumque similique
+                                reprehenderit voluptatum rerum ullam aliquid est?</p>
+
+                            <div class="about-iconbox d-flex flex-wrap">
+                                <div class="about-icon d-flex justify-content-center align-items-center flex-shrink-0">
+                                    <img src="images/about-icon1.png" alt="about-icon-image" class="img-fluid"
+                                        loading="lazy">
+                                </div>
+                                <div class="about-icontext">
+                                    <h4>Lorem, ipsum dolor</h4>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                        incididunt.</p>
+                                </div>
+                            </div>
+
+                            <div class="about-iconbox d-flex flex-wrap">
+                                <div class="about-icon d-flex justify-content-center align-items-center flex-shrink-0">
+                                    <img src="images/about-icon2.png" alt="about-icon-image" class="img-fluid"
+                                        loading="lazy">
+                                </div>
+                                <div class="about-icontext">
+                                    <h4>Lorem, ipsum dolor</h4>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                        incididunt.</p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- about section ends -->
+
+
+        <section class="about-choose-box padd wow fadeInUp" id="why-choose-section">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-12 col-md-12 col-sm-12">
+                        <div class="service-head about-choose-head text-center">
+                            <h5 class="subhead">Why Choose Us</h5>
+                            <h3 class="title">What Are You Looking For</h3>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row about-choose-row d-flex flex-wrap">
+
+                    <div class="about-choose-card wow bounceIn" data-wow-delay="0.3s">
+                        <div class="about-choose-icon">
+                            <img src="images/about-choose-icon1.png" alt="about-choose-icon-image" class="img-fluid"
+                                loading="lazy">
+                        </div>
+                        <div class="about-choose-text">
+                            <h4>Lorem Ipsum</h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec luctus tincidunt Lorem
+                                ipsum
+                                dolor sit amet</p>
+                        </div>
+                    </div>
+
+                    <div class="about-choose-card wow flipInX" data-wow-delay="0.5s">
+                        <div class="about-choose-icon">
+                            <img src="images/about-choose-icon2.png" alt="about-choose-icon-image" class="img-fluid"
+                                loading="lazy">
+                        </div>
+                        <div class="about-choose-text">
+                            <h4>Lorem Ipsum</h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec luctus tincidunt Lorem
+                                ipsum
+                                dolor sit amet</p>
+                        </div>
+                    </div>
+
+                    <div class="about-choose-card wow bounceIn" data-wow-delay="0.7s">
+                        <div class="about-choose-icon">
+                            <img src="images/about-choose-icon3.png" alt="about-choose-icon-image" class="img-fluid"
+                                loading="lazy">
+                        </div>
+                        <div class="about-choose-text">
+                            <h4>Lorem Ipsum</h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec luctus tincidunt Lorem
+                                ipsum
+                                dolor sit amet</p>
+                        </div>
+                    </div>
+
+                    <div class="about-choose-card wow flipInX" data-wow-delay="0.9s">
+                        <div class="about-choose-icon">
+                            <img src="images/about-choose-icon4.png" alt="about-choose-icon-image" class="img-fluid"
+                                loading="lazy">
+                        </div>
+                        <div class="about-choose-text">
+                            <h4>Lorem Ipsum</h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec luctus tincidunt Lorem
+                                ipsum
+                                dolor sit amet</p>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+        <!-- about choose section ends -->
+
+        <section class="service-box wow fadeInUp custom-margin" id="product-section">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-12 col-md-12 col-sm-12">
+                        <div class="service-head text-center">
+                            <h5 class="subhead">Product We Have</h5>
+                            <h3 class="title">Our Products</h3>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="service-slider">
+
+                    <div class="service-item">
+                        <div class="service-image shine">
+                            <a href="#"><img src="images/product1.jpg" alt="service-item-image"
+                                    class="img-fluid" loading="lazy"></a>
+                        </div>
+                        <div class="service-text">
+
+                            <div class="service-iconbox">
+                                <div class="service-icon">
+                                    <a href="#"><img src="images/about-icon1.png"
+                                            alt="service-item-icon" class="img-fluid" loading="lazy"></a>
+                                </div>
+                                <div class="service-icontext">
+                                    <div class="service-icon">
+                                        <a href="#"><img src="images/about-icon1.png"
+                                                alt="service-item-icon" class="img-fluid" loading="lazy"></a>
+                                    </div>
+                                    <h5>Product 01</h5>
+                                    <h4><a href="#">Hair Care</a></h4>
+                                    <div class="service-description">
+                                        <p>Lorem ipsum dolor sit met, consectetur adipiscing.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="service-btn">
+                                <a href="#" class="button-style2">View Details <i
+                                        class="fa-solid fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="service-item">
+                        <div class="service-image shine">
+                            <a href="#"><img src="images/product2.jpg" alt="service-item-image"
+                                    class="img-fluid" loading="lazy"></a>
+                        </div>
+                        <div class="service-text">
+
+                            <div class="service-iconbox">
+                                <div class="service-icon">
+                                    <a href="#"><img src="images/about-icon2.png"
+                                            alt="service-item-icon" class="img-fluid" loading="lazy"></a>
+                                </div>
+                                <div class="service-icontext">
+                                    <div class="service-icon">
+                                        <a href="#"><img src="images/about-icon2.png"
+                                                alt="service-item-icon" class="img-fluid" loading="lazy"></a>
+                                    </div>
+                                    <h5>Product 02</h5>
+                                    <h4><a href="#">Stress Care</a></h4>
+                                    <div class="service-description">
+                                        <p>Lorem ipsum dolor sit met, consectetur adipiscing.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="service-btn">
+                                <a href="#" class="button-style2">View Details <i
+                                        class="fa-solid fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="service-item">
+                        <div class="service-image shine">
+                            <a href="#"><img src="images/product3.jpg" alt="service-item-image"
+                                    class="img-fluid" loading="lazy"></a>
+                        </div>
+                        <div class="service-text">
+
+                            <div class="service-iconbox">
+                                <div class="service-icon">
+                                    <a href="#"><img src="images/about-icon1.png"
+                                            alt="service-item-icon" class="img-fluid" loading="lazy"></a>
+                                </div>
+                                <div class="service-icontext">
+                                    <div class="service-icon">
+                                        <a href="#"><img src="images/about-icon1.png"
+                                                alt="service-item-icon" class="img-fluid" loading="lazy"></a>
+                                    </div>
+                                    <h5>Product 03</h5>
+                                    <h4><a href="#">Health Care</a></h4>
+                                    <div class="service-description">
+                                        <p>Lorem ipsum dolor sit met, consectetur adipiscing.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="service-btn">
+                                <a href="#" class="button-style2">View Details <i
+                                        class="fa-solid fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="service-item">
+                        <div class="service-image shine">
+                            <a href="#"><img src="images/product4.jpg" alt="service-item-image"
+                                    class="img-fluid" loading="lazy"></a>
+                        </div>
+                        <div class="service-text">
+
+                            <div class="service-iconbox">
+                                <div class="service-icon">
+                                    <a href="#"><img src="images/about-icon2.png"
+                                            alt="service-item-icon" class="img-fluid" loading="lazy"></a>
+                                </div>
+                                <div class="service-icontext">
+                                    <div class="service-icon">
+                                        <a href="#"><img src="images/about-icon2.png"
+                                                alt="service-item-icon" class="img-fluid" loading="lazy"></a>
+                                    </div>
+                                    <h5>Product 04</h5>
+                                    <h4><a href="#">Beard Care</a></h4>
+                                    <div class="service-description">
+                                        <p>Lorem ipsum dolor sit met, consectetur adipiscing.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="service-btn">
+                                <a href="#" class="button-style2">View Details <i
+                                        class="fa-solid fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="service-item">
+                        <div class="service-image shine">
+                            <a href="#"><img src="images/product5.jpg" alt="service-item-image"
+                                    class="img-fluid" loading="lazy"></a>
+                        </div>
+                        <div class="service-text">
+
+                            <div class="service-iconbox">
+                                <div class="service-icon">
+                                    <a href="#"><img src="images/about-icon1.png"
+                                            alt="service-item-icon" class="img-fluid" loading="lazy"></a>
+                                </div>
+                                <div class="service-icontext">
+                                    <div class="service-icon">
+                                        <a href="#"><img src="images/about-icon1.png"
+                                                alt="service-item-icon" class="img-fluid" loading="lazy"></a>
+                                    </div>
+                                    <h5>Product 05</h5>
+                                    <h4><a href="#">Beauty Care</a></h4>
+                                    <div class="service-description">
+                                        <p>Lorem ipsum dolor sit met, consectetur adipiscing.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="service-btn">
+                                <a href="#" class="button-style2">View Details <i
+                                        class="fa-solid fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+
+                    </div>
+
+
+
+                </div>
+
+            </div>
+        </section>
+
+        <!-- product section ends -->
+
+        <section class="combo-offer-box padd wow fadeInUp" id="combo-offer-section">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-12 col-md-12 col-sm-12">
+                        <div class="combo-head text-center">
+                            <h5 class="subhead">Our Combo</h5>
+                            <h3 class="title">Combo Offers</h3>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row combo-row">
+
+                    <div class="col-lg-4 col-md-6">
+                        <div class="offer-card wow bounceIn" data-wow-delay="0.2s">
+                            <h4>Hair + Beard Care</h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor
+                                incididunt.
+                            </p>
+                            <h5 class="combo-price">$29.99</h5>
+                            <a class="button-style1">Shop Now</a>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6">
+                        <div class="offer-card wow bounceIn" data-wow-delay="0.4s">
+                            <h4>Beauty Complete Set</h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor
+                                incididunt.
+                            </p>
+                            <h5 class="combo-price">$49.99</h5>
+                            <a class="button-style1">Shop Now</a>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6">
+                        <div class="offer-card wow bounceIn" data-wow-delay="0.6s">
+                            <h4>Wellness Package</h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor
+                                incididunt.
+                            </p>
+                            <h5 class="combo-price">$39.99</h5>
+                            <a class="button-style1">Shop Now</a>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+        <!-- combo offer section ends -->
+
+
+        <section class="testimonial-inner-box custom-margin" id="testimonial-section">
+            <div class="container">
+
+                <div class="row justify-content-center text-center">
+                    <div class="col-lg-6 col-md-10 col-sm-12">
+                        <div class="testimonial-inner-head">
+                            <h5 class="subhead">Clients Testimonial</h5>
+                            <h3 class="title">Lorem Ipsum</h3>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row testimonial-row">
+
+                    <div class="col-lg-12 col-md-12 col-sm-12">
+
+                        <div class="testimonial-inner-slider">
+
+                            <div class="testimonial-card">
+                                <div class="testimonial-head d-flex flex-wrap">
+
+                                    <div class="testimonial-icontext">
+                                        <div class="testimonial-rating">
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star"></i>
+                                        </div>
+                                        <div class="testimonial-client-info">
+                                            <h4>Lorem Ipsum</h4>
+                                            <h5>Customer</h5>
+                                        </div>
+                                    </div>
+
+                                    <div class="testimonial-icon">
+                                        <img src="images/user1.png" alt="testimonial-user-icon" class="img-fluid"
+                                            loading="lazy">
+                                    </div>
+                                </div>
+
+                                <div class="testimonial-info">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                        incididunt ut labore et et dolore.</p>
+                                </div>
+
+                            </div>
+
+                            <div class="testimonial-card">
+                                <div class="testimonial-head d-flex flex-wrap">
+
+                                    <div class="testimonial-icontext">
+                                        <div class="testimonial-rating">
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star"></i>
+                                        </div>
+                                        <div class="testimonial-client-info">
+                                            <h4>Lorem Ipsum</h4>
+                                            <h5>Customer</h5>
+                                        </div>
+                                    </div>
+
+                                    <div class="testimonial-icon">
+                                        <img src="images/user2.png" alt="testimonial-user-icon" class="img-fluid"
+                                            loading="lazy">
+                                    </div>
+                                </div>
+
+                                <div class="testimonial-info">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                        incididunt ut labore et et dolore.</p>
+                                </div>
+
+                            </div>
+
+                            <div class="testimonial-card">
+                                <div class="testimonial-head d-flex flex-wrap">
+
+                                    <div class="testimonial-icontext">
+                                        <div class="testimonial-rating">
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star"></i>
+                                        </div>
+                                        <div class="testimonial-client-info">
+                                            <h4>Lorem Ipsum</h4>
+                                            <h5>Customer</h5>
+                                        </div>
+                                    </div>
+
+                                    <div class="testimonial-icon">
+                                        <img src="images/user3.png" alt="testimonial-user-icon" class="img-fluid"
+                                            loading="lazy">
+                                    </div>
+                                </div>
+
+                                <div class="testimonial-info">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                        incididunt ut labore et et dolore.</p>
+                                </div>
+
+                            </div>
+
+                            <div class="testimonial-card">
+                                <div class="testimonial-head d-flex flex-wrap">
+
+                                    <div class="testimonial-icontext">
+                                        <div class="testimonial-rating">
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star"></i>
+                                        </div>
+                                        <div class="testimonial-client-info">
+                                            <h4>Lorem Ipsum</h4>
+                                            <h5>Customer</h5>
+                                        </div>
+                                    </div>
+
+                                    <div class="testimonial-icon">
+                                        <img src="images/user4.png" alt="testimonial-user-icon" class="img-fluid"
+                                            loading="lazy">
+                                    </div>
+                                </div>
+
+                                <div class="testimonial-info">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                        incididunt ut labore et et dolore.</p>
+                                </div>
+
+                            </div>
+
+                            <div class="testimonial-card">
+                                <div class="testimonial-head d-flex flex-wrap">
+
+                                    <div class="testimonial-icontext">
+                                        <div class="testimonial-rating">
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star"></i>
+                                        </div>
+                                        <div class="testimonial-client-info">
+                                            <h4>Lorem Ipsum</h4>
+                                            <h5>Customer</h5>
+                                        </div>
+                                    </div>
+
+                                    <div class="testimonial-icon">
+                                        <img src="images/user5.png" alt="testimonial-user-icon" class="img-fluid"
+                                            loading="lazy">
+                                    </div>
+                                </div>
+
+                                <div class="testimonial-info">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                        incididunt ut labore et et dolore.</p>
+                                </div>
+
+                            </div>
+
+
+
+                        </div>
+
+                        <div class="testimonial-nav">
+                            <ul>
+                                <li><span class="testimonial-prev slick-prev"><i
+                                            class="fa-solid fa-angle-left"></i></span>
+                                </li>
+                                <li><span class="testimonial-next slick-next"><i
+                                            class="fa-solid fa-angle-right"></i></span>
+                                </li>
+                            </ul>
+                        </div>
+
+
+
+                    </div>
+                </div>
+
+            </div>
+            </div>
+        </section>
+
+        <!-- testimonial section ends -->
+
+        <section class="bestseller-box wow fadeInUp" id="bestseller-section">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-12 col-md-12 col-sm-12">
+                        <div class="bestseller-head text-center">
+                            <h5 class="subhead">Our Bestsellers</h5>
+                            <h3 class="title">Lorem Ipsum</h3>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bestseller-slider">
+
+                    <div class="bestseller-item">
+                        <div class="bestseller-image shine">
+                            <a href="#">
+                                <img src="images/bestseller1.jpg" alt="bestseller-item-image" loading="lazy">
+                            </a>
+                        </div>
+                        <div class="bestseller-text">
+                            <h5 class="bestseller-price">$29.00</h5>
+                            <h4><a href="#">Lorem ipsum dolor sit amet</a></h4>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde debitis, modi sint soluta
+                                porro harum.</p>
+                        </div>
+                        <div class="bestseller-btn-box">
+                            <div class="bestseller-left-btn">
+                                <a href="#">Read More <span><i class="fa-solid fa-arrow-right"></i></span></a>
+                            </div>
+                            <div class="bestseller-right-btn">
+                                <a href="#"><i class="fa-solid fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="bestseller-item">
+                        <div class="bestseller-image shine">
+                            <a href="#">
+                                <img src="images/bestseller2.jpg" alt="bestseller-item-image" loading="lazy">
+                            </a>
+                        </div>
+                        <div class="bestseller-text">
+                            <h5 class="bestseller-price">$32.00</h5>
+                            <h4><a href="#">Lorem ipsum dolor sit amet</a></h4>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde debitis, modi sint soluta
+                                porro harum.</p>
+                        </div>
+                        <div class="bestseller-btn-box">
+                            <div class="bestseller-left-btn">
+                                <a href="#">Read More <span><i class="fa-solid fa-arrow-right"></i></span></a>
+                            </div>
+                            <div class="bestseller-right-btn">
+                                <a href="#"><i class="fa-solid fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="bestseller-item">
+                        <div class="bestseller-image shine">
+                            <a href="#">
+                                <img src="images/bestseller3.jpg" alt="bestseller-item-image" loading="lazy">
+                            </a>
+                        </div>
+                        <div class="bestseller-text">
+                            <h5 class="bestseller-price">$35.00</h5>
+                            <h4><a href="#">Lorem ipsum dolor sit amet</a></h4>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde debitis, modi sint soluta
+                                porro harum.</p>
+                        </div>
+                        <div class="bestseller-btn-box">
+                            <div class="bestseller-left-btn">
+                                <a href="#">Read More <span><i class="fa-solid fa-arrow-right"></i></span></a>
+                            </div>
+                            <div class="bestseller-right-btn">
+                                <a href="#"><i class="fa-solid fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="bestseller-item">
+                        <div class="bestseller-image shine">
+                            <a href="#">
+                                <img src="images/bestseller1.jpg" alt="bestseller-item-image" loading="lazy">
+                            </a>
+                        </div>
+                        <div class="bestseller-text">
+                            <h5 class="bestseller-price">$29.00</h5>
+                            <h4><a href="#">Lorem ipsum dolor sit amet</a></h4>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde debitis, modi sint soluta
+                                porro harum.</p>
+                        </div>
+                        <div class="bestseller-btn-box">
+                            <div class="bestseller-left-btn">
+                                <a href="#">Read More <span><i class="fa-solid fa-arrow-right"></i></span></a>
+                            </div>
+                            <div class="bestseller-right-btn">
+                                <a href="#"><i class="fa-solid fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="bestseller-item">
+                        <div class="bestseller-image shine">
+                            <a href="#">
+                                <img src="images/bestseller2.jpg" alt="bestseller-item-image" loading="lazy">
+                            </a>
+                        </div>
+                        <div class="bestseller-text">
+                            <h5 class="bestseller-price">$32.00</h5>
+                            <h4><a href="#">Lorem ipsum dolor sit amet</a></h4>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde debitis, modi sint soluta
+                                porro harum.</p>
+                        </div>
+                        <div class="bestseller-btn-box">
+                            <div class="bestseller-left-btn">
+                                <a href="#">Read More <span><i class="fa-solid fa-arrow-right"></i></span></a>
+                            </div>
+                            <div class="bestseller-right-btn">
+                                <a href="#"><i class="fa-solid fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="bestseller-item">
+                        <div class="bestseller-image shine">
+                            <a href="#">
+                                <img src="images/bestseller3.jpg" alt="bestseller-item-image" loading="lazy">
+                            </a>
+                        </div>
+                        <div class="bestseller-text">
+                            <h5 class="bestseller-price">$35.00</h5>
+                            <h4><a href="#">Lorem ipsum dolor sit amet</a></h4>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde debitis, modi sint soluta
+                                porro harum.</p>
+                        </div>
+                        <div class="bestseller-btn-box">
+                            <div class="bestseller-left-btn">
+                                <a href="#">Read More <span><i class="fa-solid fa-arrow-right"></i></span></a>
+                            </div>
+                            <div class="bestseller-right-btn">
+                                <a href="#"><i class="fa-solid fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+
+                    </div>
+
+
+                </div>
+
+
+            </div>
+        </section>
+
+        <!-- bestseller section ends -->
+
+        <section class="blog-box wow fadeInUp custom-margin" id="blog-section">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-12 col-md-12 col-sm-12">
+                        <div class="blog-head">
+                            <h5 class="sub-title">Latest Blog</h5>
+                            <h3 class="title">Lorem Ipsum</h3>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row blog-row">
+
+                    <div class="col-lg-12 col-md-12 col-sm-12">
+                        <article class="blog-item d-flex flex-wrap wow fadeInUp" data-wow-delay="0.3">
+                            <div class="blog-text">
+
+                                <div class="blog-text-left">
+                                    <ul>
+                                        <li><i class="fa-solid fa-user"></i> <span>By Admin</span></li>
+                                        <li><i class="fa-solid fa-comments"></i> <span>Comments (05)</span></li>
+                                    </ul>
+                                    <div class="blog-info">
+                                        <h4><a href="#">Lorem ipsum dolor sit amet</a></h4>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                    </div>
+                                </div>
+
+                                <div class="blog-text-right">
+                                    <a href="#" class="button-style3">Read More <i
+                                            class="fa-solid fa-arrow-right"></i></a>
+                                </div>
+
+                            </div>
+
+                            <div class="blog-image">
+                                <a href="#"><img src="images/blog1.jpg" alt="blog-item-image" class="img-fluid"
+                                        loading="lazy"></a>
+                                <div class="blog-date">15 May 2025</div>
+                            </div>
+
+                        </article>
+                    </div>
+
+                    <div class="col-lg-12 col-md-12 col-sm-12">
+                        <article class="blog-item d-flex flex-wrap wow fadeInUp" data-wow-delay="0.5s">
+                            <div class="blog-text">
+
+                                <div class="blog-text-left">
+                                    <ul>
+                                        <li><i class="fa-solid fa-user"></i> <span>By Admin</span></li>
+                                        <li><i class="fa-solid fa-comments"></i> <span>Comments (05)</span></li>
+                                    </ul>
+                                    <div class="blog-info">
+                                        <h4><a href="#">Lorem ipsum dolor sit amet</a></h4>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                    </div>
+                                </div>
+
+                                <div class="blog-text-right">
+                                    <a href="#" class="button-style3">Read More <i
+                                            class="fa-solid fa-arrow-right"></i></a>
+                                </div>
+
+                            </div>
+
+                            <div class="blog-image">
+                                <a href="#"><img src="images/blog2.jpg" alt="blog-item-image" class="img-fluid"
+                                        loading="lazy"></a>
+                                <div class="blog-date">10 Apr 2025</div>
+                            </div>
+
+                        </article>
+                    </div>
+
+                    <div class="col-lg-12 col-md-12 col-sm-12">
+                        <article class="blog-item d-flex flex-wrap wow fadeInUp" data-wow-delay="0.7s">
+                            <div class="blog-text">
+
+                                <div class="blog-text-left">
+                                    <ul>
+                                        <li><i class="fa-solid fa-user"></i> <span>By Admin</span></li>
+                                        <li><i class="fa-solid fa-comments"></i> <span>Comments (05)</span></li>
+                                    </ul>
+                                    <div class="blog-info">
+                                        <h4><a href="#">Lorem ipsum dolor sit amet</a></h4>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                    </div>
+                                </div>
+
+                                <div class="blog-text-right">
+                                    <a href="#" class="button-style3">Read More <i
+                                            class="fa-solid fa-arrow-right"></i></a>
+                                </div>
+
+                            </div>
+
+                            <div class="blog-image">
+                                <a href="#"><img src="images/blog3.jpg" alt="blog-item-image" class="img-fluid"
+                                        loading="lazy"></a>
+                                <div class="blog-date">05 Feb 2025</div>
+                            </div>
+
+                        </article>
+                    </div>
+
+                </div>
+
+
+            </div>
+        </section>
+
+        <!-- blog section ends -->
+
+        <section class="video-testimonial-box margin-sec" id="video-testimonial-section">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-12 col-md-12 col-sm-12">
+                        <div class="video-testimonial-head text-center">
+                            <h5 class="subhead">Video Testimonials</h5>
+                            <h3 class="title">Lorem Ipsum</h3>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="video-testimonial-slider">
+
+                    <div class="video-testimonial-item">
+                        <iframe src="https://www.youtube.com/embed/D0UnqGm_miA?si=HatN9n6mFodQGVu4"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+
+                    <div class="video-testimonial-item">
+                        <iframe src="https://www.youtube.com/embed/D0UnqGm_miA?si=HatN9n6mFodQGVu4"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+
+                    <div class="video-testimonial-item">
+                        <iframe src="https://www.youtube.com/embed/D0UnqGm_miA?si=HatN9n6mFodQGVu4"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+
+                    <div class="video-testimonial-item">
+                        <iframe src="https://www.youtube.com/embed/D0UnqGm_miA?si=HatN9n6mFodQGVu4"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+
+                    <div class="video-testimonial-item">
+                        <iframe src="https://www.youtube.com/embed/D0UnqGm_miA?si=HatN9n6mFodQGVu4"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+
+                    <div class="video-testimonial-item">
+                        <iframe src="https://www.youtube.com/embed/D0UnqGm_miA?si=HatN9n6mFodQGVu4"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+
+
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer padd" id="contact-section">
+        <div class="container">
+            <div class="row footer-row">
+
+                <div class="col-lg-3 col-md-6 col-sm-6 col-sm-12 footer-first">
+                    <div class="footer-box footer-image">
+                        <div class="footer-logo">
+                            <a href="index.html"><img src="images/logo.png" alt="footer-logo" class="img-fluid"></a>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit o ipsum dolor sit</p>
+
+                        <div class="footer-icon">
+                            <ul class="d-flex social-icon">
+                                <li><a href="https://www.facebook.com" target="_blank" data-bs-toggle="tooltip"
+                                        data-bs-placement="bottom" data-bs-custom-class="custom-tooltip"
+                                        data-bs-title="Facebook"> <i class="fa-brands fa-facebook-f"
+                                            aria-hidden="true"></i>
+                                    </a></li>
+                                <li><a href="https://www.instagram.com" target="_blank" data-bs-toggle="tooltip"
+                                        data-bs-placement="bottom" data-bs-custom-class="custom-tooltip"
+                                        data-bs-title="Instagram"> <i class="fa-brands fa-instagram"
+                                            aria-hidden="true"></i>
+                                    </a></li>
+                                <li><a href="https://www.youtube.com" target="_blank" data-bs-toggle="tooltip"
+                                        data-bs-placement="bottom" data-bs-custom-class="custom-tooltip"
+                                        data-bs-title="Youtube"> <i class="fa-brands fa-youtube"></i> </a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-lg-2 col-md-6 col-sm-6 col-xs-12 footer-quick-box">
+                    <div class="footer-box">
+                        <h4>Quick Links</h4>
+                        <div class="footer-link">
+                            <ul>
+                                <li><a href="index.html">Home</a></li>
+                                <li><a href="#product-section">Products</a></li>
+                                <li><a href="#testimonial-section">Reviews</a></li>
+                                <li><a href="#blog-section">Blogs</a></li>
+                                <li><a href="#contact-section">Contact Us</a></li>
+                            </ul>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 footer-contact-box">
+                    <div class="footer-box">
+                        <h4>Locate Us</h4>
+                        <div class="footer-contact">
+
+                            <div class="footer-iconbox d-flex justify-content-between">
+                                <div class="foot-icon">
+                                    <i class="fa-solid fa-location-dot"></i>
+                                </div>
+                                <div class="foot-icontext">
+                                    <p>Lorem ipsum dolor sit amet</p>
+                                </div>
+                            </div>
+
+                            <div class="footer-iconbox d-flex justify-content-between">
+                                <div class="foot-icon">
+                                    <i class="fa-solid fa-envelope"></i>
+                                </div>
+                                <div class="foot-icontext">
+                                    <a href="mailto:example@gmail.com">example@gmail.com</a>
+                                </div>
+                            </div>
+
+                            <div class="footer-iconbox d-flex justify-content-between">
+                                <div class="foot-icon">
+                                    <i class="fa-solid fa-phone"></i>
+                                </div>
+                                <div class="foot-icontext">
+                                    <a href="tel:1234567890">+123-4567-890</a>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12 footer-form-box">
+                    <div class="footer-box">
+                        <h4>Contact Form</h4>
+                        <div class="footer-form">
+
+                            <form class="contact-form">
+                                <div class="footer-input">
+                                    <input type="text" placeholder="Your Name" required>
+                                </div>
+                                <div class="footer-input">
+                                    <input type="email" placeholder="Your Email" required>
+                                </div>
+                                <div class="footer-input">
+                                    <textarea placeholder="Your Message" required></textarea>
+                                </div>
+                                <div class="footer-submit">
+                                    <input type="submit" value="Send Message">
+                                </div>
+                            </form>
+
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+
+        </div>
+
+    </footer>
+
+    <section class="footer-copyright">
+        <div class="container">
+            <p>Copyright &copy;
+                <?php echo date("Y");?> <a href="index.html">Akshay Kumar</a>. All Rights Reserved.
+            </p>
+    </section>
+
+    <div class="scroll_top">
+        <i class="fa fa-arrow-up" aria-hidden="true"></i>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.1.0-beta.1/js/select2.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+    <script>
+        $('.menu ul li > ul.sub-menu').before('<div class="click-btn"><i class="fa-solid fa-angle-down"></i></div>');
+
+    </script>
+    <script src="js/main.js" defer></script>
+</body>
+
+</html>
